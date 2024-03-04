@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <!-- GOOGLE FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Orbitron&display=swap" rel="stylesheet">    
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./dictionary.css">
+    <link rel="stylesheet" href="./interface.css">
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>Enrich Your Vocabulary</h1>
+        <p>World Of Words</p>
+    </header>
+    <main>
+        <div id="search-box" style="text-align: center;">
+            <input id="search-input" type="text" onfocus="" placeholder="Type a word">
+            <button id="search-button">Find</button>
+        </div>
+        <h2 id="error-message"></h2>
+        <h2 id="loader-message">Loading..</h2>
+        <section id="dictionary-interface">
+            <div id="interface-head"></div>
+            <div id="interface-middle">
+                <h4 id="partOfSpeech"></h4>
+                <h5 id="definition-head"></h5>
+                <ul id="definition-list-box"></ul>
+                <h5 id="synonym-head"></h5>
+                <ul id="synonym-list"></ul>
+                <h5 id="antonym-head"></h5>
+                <ul id="antonym-list"></ul>
+            </div>
+            <div id="interface-bottom">
+                <div id="interface-foot"></div>
+                <div id="developer-contact"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./dictionary.js"></script>
+    <script src="./interface-top.js"></script>
+    <script src="./interface-middle.js"></script>
+    <script src="./interface-bottom.js"></script>
+    <!-- <script src="./task6.js"></script> -->
+</body>
+</html>

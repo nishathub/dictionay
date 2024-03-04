@@ -1,0 +1,187 @@
+/* TOP INTERFACE  */
+#dictionary-interface {
+    box-shadow: 0 0 10px 0 lightgreen;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 7px;
+    /* background-color: #2F3653; */
+    background: rgb(17, 87, 88);
+    background: linear-gradient(180deg, rgba(17, 87, 88, 1) 14%, rgba(47, 54, 83, 1) 48%, rgba(25, 22, 120, 0.9248949579831933) 80%);
+}
+
+#interface-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#interface-head h2 {
+    font-size: 30px;
+    font-family: 'Cinzel';
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+#interface-head h4 {
+    letter-spacing: 0.5px;
+    color: rgb(74, 252, 74);
+    margin: 10px 0 0 0;
+}
+
+#pronunciation {
+    display: none;
+}
+
+#play-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: lightgreen;
+    border: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    transition: background-color 0.3s;
+}
+
+#play-button:hover {
+    background-color: burlywood;
+}
+
+#play-button:active {
+    background-color: palevioletred;
+}
+
+/* MIDDLE INTERFACE */
+#interface-middle h4 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Cinzel';
+    color: white;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+#interface-middle h4::after {
+    content: '';
+    margin: 0 0 0 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 60%;
+    border-top: 1px solid lightgreen;
+    position: absolute;
+}
+
+#interface-middle h5 {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: rgb(220, 220, 220);
+}
+
+#interface-middle ul {
+    color: rgb(210, 210, 210);
+    list-style-type: none;
+}
+
+#interface-middle ul li {
+    position: relative;
+    line-height: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.definition-list li::before,
+.example-list li::before {
+    content: '\2022';
+    color: lightgreen;
+    display: inline-block;
+    width: 3px;
+    position: absolute;
+    left: -20px;
+}
+
+.synonym-list,
+.antonym-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.synonym-list a,
+.antonym-list a {
+    color: rgb(210, 210, 210);
+}
+
+/* BOTTOM INTERFACE */
+#interface-bottom{
+    padding: 20px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgreen;
+    border-top-width: 3px;
+}
+#interface-foot {
+    display: flex;
+    flex-direction: column;
+}
+#interface-foot h4{
+    margin: 0;
+    line-height: 30px;
+    font-weight: lighter;
+    color: rgb(230, 230, 230);
+}
+
+#interface-foot h4 a,
+#api-credit a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transition-duration: .3s;
+    margin: 0;
+}
+#interface-foot h4 a:hover,
+#api-credit a:hover{
+    color: lightgreen;
+}
+#developer-contact h5 {
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    font-family: 'Cinzel', 'Orbitron', sans-serif;
+    color: lightgreen;
+}
+#developer-contact h5 span a{
+    font-size: 16px;
+    font-family: 'Orbitron','Cinzel',  serif;
+    letter-spacing: 3px;
+    color: orange;
+    text-decoration: none;
+    transition: color .3s;
+}
+#developer-contact h5 span a:hover{
+    color: white;
+}
+#api-credit{
+    display: flex;
+    justify-content: center;
+}
+#api-credit a{
+
+}
+
+@media  screen and (max-width: 600px) {
+    #interface-bottom{
+        flex-direction: column;
+    }
+    #interface-foot {
+    }
+    #interface-head h2{
+        font-size: 28px;
+    }
+}

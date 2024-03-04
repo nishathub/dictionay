@@ -1,0 +1,108 @@
+body {
+    /* background-color: #3C3C3C; */
+    background: rgb(131, 58, 180);
+    background: linear-gradient(61deg, rgba(131, 58, 180, 1) 12%, rgba(41, 83, 204, 0.8772759103641457) 28%, rgba(242, 31, 31, 0.9276960784313726) 47%, rgba(182, 69, 252, 0.9445028011204482) 70%, rgba(252, 176, 69, 0.9585084033613446) 89%);
+    padding: 20px;
+    margin: 0;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+header h1 {
+    color: black;
+    margin-top: 0;
+    font-family: 'Cinzel';
+}
+
+header p {
+    font-size: 20px;
+    /* font-weight: bold; */
+    letter-spacing: 0.5px;
+    color: white;
+    font-family: 'Cinzel';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#search-box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    transition: margin-top .5s;
+}
+/* INPUT LABEL STYLE  */
+#search-box.label {
+    position: relative;
+    margin-top: 15px;
+}
+.pseudo-label{
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    color: lightgreen;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+#search-input,
+#search-button {
+    background-color: lightblue;
+    border: 1px solid rgb(138, 247, 138);
+    box-shadow: 0px 0px 10px 0px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding: 5px 10px 5px 10px;
+}
+
+#search-input {
+    max-width: 100%;
+}
+
+#search-button {
+    background-color: lightgreen;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+#search-button:hover {
+    background-color: lightcyan;
+}
+
+#error-message {
+    color: rgb(11, 11, 11);
+    letter-spacing: 1s;
+    font-weight: lighter;
+    margin: 5px;
+}
+@media  screen and (max-width: 600px) {
+    #search-box {
+        gap: 5px;
+    }
+    #search-input {
+        max-width: 60%;
+    }
+    .pseudo-label{
+        left: 25px;
+    }
+    header h1{
+        font-size: 26px;
+    }
+    header p{
+        font-size: 18px;
+    }
+    #error-message{
+        font-size: 22px;
+    }
+}
