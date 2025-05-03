@@ -18,6 +18,7 @@ const runDictionary = async (word) => {
             } else {
                 errorMessageDisplay.innerText = `Error Retrieving Data From Dictionary API`;
             }
+            loaderMessageDisplay.style.display = 'none'; // hide if error
             return;
         }
         const data = await res.json();
@@ -27,6 +28,8 @@ const runDictionary = async (word) => {
     } catch (error) {
         console.log( error);
         errorMessageDisplay.innerText = `Network Error or unable to connect to the Dictionary API`;
+        loaderMessageDisplay.style.display = 'none'; // hide if error 
+
     }
     loaderMessageDisplay.style.display = 'none'; // hide while data are loaded
 }
@@ -59,7 +62,6 @@ window.onload = function(){
 // let pseudoLabel = document.createElement('div'); // declared earlier
 searchInput.addEventListener('input', function(){
     pseudoLabel.innerHTML = '';
-    console.log(searchInput.value.length);
     if (searchInput.value.length > 2){
         searchBox.classList.add('label');
         pseudoLabel.classList.add('pseudo-label');
