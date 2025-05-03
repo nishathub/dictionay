@@ -14,7 +14,7 @@ const runDictionary = async (word) => {
         const res = await fetch(url);
         if(!res.ok){
             if(res.status === 404){
-                errorMessageDisplay.innerText = `"${word}" Not Found`;
+                errorMessageDisplay.innerText = `"${word}" Not Found!`;
             } else {
                 errorMessageDisplay.innerText = `Error Retrieving Data From Dictionary API`;
             }
