@@ -1,7 +1,5 @@
 body {
-    /* background-color: #3C3C3C; */
-    background: rgb(131, 58, 180);
-    background: linear-gradient(61deg, rgba(131, 58, 180, 1) 12%, rgba(41, 83, 204, 0.8772759103641457) 28%, rgba(242, 31, 31, 0.9276960784313726) 47%, rgba(182, 69, 252, 0.9445028011204482) 70%, rgba(252, 176, 69, 0.9585084033613446) 89%);
+    background-color: lightseagreen;
     padding: 20px;
     margin: 0;
     color: whitesmoke;
