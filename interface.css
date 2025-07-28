@@ -4,8 +4,7 @@
     padding: 20px;
     max-width: 800px;
     width: 90%;
-    border-radius: 7px;
-    /* background-color: #2F3653; */
+    border-radius: 8px;
     background: rgb(17, 87, 88);
     background: linear-gradient(180deg, rgba(17, 87, 88, 1) 14%, rgba(47, 54, 83, 1) 48%, rgba(25, 22, 120, 0.9248949579831933) 80%);
 }
